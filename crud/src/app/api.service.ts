@@ -34,4 +34,9 @@ export class ApiService {
      {headers: this.httpHeaders});
 
   }
+  deleteMovie(id:any): Observable<any>{
+    return this.http.delete(this.baseurl + '/movies/'+ id + '/',
+     {headers: this.httpHeaders});
+
+  }
 }
