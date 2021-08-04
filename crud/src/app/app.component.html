@@ -5,6 +5,8 @@
   </li>
 </u>
 <hr>
-Title <input type="text" [(ngModel)]="title"/><br>
-Desc <input type="text" [(ngModel)]="desc"/><br>
-Year <input type="text" [(ngModel)]="year"/><br>
+Title <input type="text" [(ngModel)]="selectedMovie.title"/><br>
+Desc <input type="text" [(ngModel)]="selectedMovie.desc"/><br>
+Year <input type="text" [(ngModel)]="selectedMovie.year"/><br>
+<button (click)="updateMovie()">PUT</button>
+<button (click)="createMovie()">POST</button>
